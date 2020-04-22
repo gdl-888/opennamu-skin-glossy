@@ -150,11 +150,11 @@
             border-bottom: 1px solid #99c;
             padding: 5px;
 
-            /* ÃâÃ³ B: https://stackoverflow.com/questions/3695435/crop-text-too-long-inside-div */
+            /* ì¶œì²˜ B: https://stackoverflow.com/questions/3695435/crop-text-too-long-inside-div */
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
-            /* ÃâÃ³ B ³¡ */
+            /* ì¶œì²˜ B ë */
         }
 
 		.profile-img {
@@ -170,7 +170,7 @@
         }
 
         * {
-            font-family: "±¼¸²";
+            font-family: "êµ´ë¦¼";
         }
         button, input[type="button"], input[type="submit"], input[type="reset"], a.btn {
             height: 20px;
@@ -308,7 +308,7 @@
 
         h1,h2,h3,h4,h5,h6 {
             font-weight: 700;
-            font-family: "µ¸¿ò";
+            font-family: "ë‹ì›€";
         }
         h1 {
             font-size: 20pt;
@@ -378,7 +378,7 @@
 
             text-shadow: 1px 1px #000;
 
-            font-family: "±¼¸²" !important;
+            font-family: "êµ´ë¦¼" !important;
             font-size: 12pt;
         }
         .xp-taskgroup .xp-taskgroup-tasks {
@@ -487,16 +487,15 @@
     <title>
         {{ imp[0] }}{% if imp[3][0] != 0 %}{{ imp[3][0] }}{% endif %} - {{ imp[1][0] }}
     </title>
-
-    <!--[if IE]> <script src="https://code.jquery.com/jquery-1.8.0.min.js"></script> <![endif]-->
+ <script src="https://code.jquery.com/jquery-1.8.0.min.js"></script> 
     {{imp[1][5]|safe}}
     {{imp[2][3]|safe}}
 
-    <!--[if IE]> <script src="https://code.jquery.com/jquery-1.8.0.min.js"></script> <![endif]-->
+<script src="https://code.jquery.com/jquery-1.8.0.min.js"></script> 
 
     <!--[if IE]>
         <script>
-            document.title = document.title + " (È£È¯ ¸ğµå)";
+            document.title = document.title + " (í˜¸í™˜ ëª¨ë“œ)";
         </script>
     <![endif]-->
 
@@ -516,7 +515,7 @@
     });
     </script>
 
-    <!-- »ç¿ëÁßÀÎ ºê¶ó¿ìÀú°¡ IE°¡ ¾Æ´Ï¸é ±×¶óµ¥ÀÌ¼ÇÀ¸·Î ÀÌ»Ú°Ô ²Ù¹Î´Ù. -->
+    <!-- ì‚¬ìš©ì¤‘ì¸ ë¸Œë¼ìš°ì €ê°€ IEê°€ ì•„ë‹ˆë©´ ê·¸ë¼ë°ì´ì…˜ìœ¼ë¡œ ì´ì˜ê²Œ ê¾¸ë¯¼ë‹¤. -->
     <!--[if !IE]><!-->
 
         <style>
@@ -898,10 +897,10 @@
     <script>
         $(function() {
             $.get('/htmldata/recentchanges', function(response) {
-                document.querySelector('#recentChangesTable').innerHTML = response + '<a class=moreRecentLink href=/RecentChanges>[´õº¸±â...]</a>';
+                document.querySelector('#recentChangesTable').innerHTML = response + '<a class=moreRecentLink href=/RecentChanges>[ë”ë³´ê¸°...]</a>';
             });
             $.get('/htmldata/recentchanges?discuss=1', function(response) {
-                document.querySelector('#recentDiscussTable').innerHTML = response + '<a class=moreRecentLink href=/RecentDiscuss>[´õº¸±â...]</a>';
+                document.querySelector('#recentDiscussTable').innerHTML = response + '<a class=moreRecentLink href=/RecentDiscuss>[ë”ë³´ê¸°...]</a>';
             });
 
             jQuery(function() {
@@ -931,64 +930,64 @@
 		<grp class=fullBar>
             <a class=navbar-link onclick="history.back();">&lt;</a>
 
-			<a href=/ class=navbar-link>È¨</a> |
+			<a href=/ class=navbar-link>í™ˆ</a> |
 			<a href=/recent_changes class=navbar-link>
 			    <span class=icon-container style="background: linear-gradient(#fff0f2, #ffaac6 50%, #ffaad2 49%, #fff0f6 100%); border-color: #d54272;">
 			        <span class="icon ion-compass" style="background: linear-gradient(#ffd8e5, #c41a6a 50%, #fb3b9e 49%, #ea92b7 100%);"></span>
 			    </span>
 
-			    ÃÖ±Ù º¯°æ
+			    ìµœê·¼ ë³€ê²½
 			</a> |
 			<a href=/recent_discuss class=navbar-link>
 			    <span class=icon-container style="background: linear-gradient(#fffbf0, #f9f288 50%, #e8df60 49%, #fffdf0 100%); border-color: #d5c542;">
 			        <span class="icon ion-android-textsms" style="background: linear-gradient(#f2e099, #b38f26 50%, #ddb722 49%, #ffefb3 100%);"></span>
 			    </span>
 
-			    ÃÖ±Ù Åä·Ğ
+			    ìµœê·¼ í† ë¡ 
 			</a> |
 			<a dropdown href=# class=navbar-link>
 			    <span class=icon-container style="background: linear-gradient(#f0fff1, #aaffb3 50%, #adffaa 49%, #f3fff0 100%); border-color: #5bd542;">
 			        <span class="icon ion-wand" style="background: linear-gradient(#e4ffd8, #1ac425 50%, #4afb3b 49%, #92ea98 100%);"></span>
 			    </span>
 
-			    Æ¯¼ö ±â´É
+			    íŠ¹ìˆ˜ ê¸°ëŠ¥
 			</a> |
 			<div class=dropdown style="margin-left: 370px;">
                 <li>
-                <a href="/please">ÀÛ¼ºÀÌ ÇÊ¿äÇÑ ¹®¼­</a>
+                <a href="/please">ì‘ì„±ì´ í•„ìš”í•œ ë¬¸ì„œ</a>
                 </li>
                 <li>
-                <a href="/image_file_list">ÀÌ¹ÌÁö È­ÀÏ ¸ñ·Ï</a>
+                <a href="/image_file_list">ì´ë¯¸ì§€ í™”ì¼ ëª©ë¡</a>
                 </li>
                 <li>
-                <a href="/admin_list">°ü¸®ÀÚ ¸ñ·Ï</a>
+                <a href="/admin_list">ê´€ë¦¬ì ëª©ë¡</a>
                 </li>
                 <li>
-                <a href="/not_close_topic">¿­¸° Åä·Ğ ¸ñ·Ï</a>
+                <a href="/not_close_topic">ì—´ë¦° í† ë¡  ëª©ë¡</a>
                 </li>
                 <li>
-                <a href="/old_page">¿À·¡µÈ ¹®¼­</a>
+                <a href="/old_page">ì˜¤ë˜ëœ ë¬¸ì„œ</a>
                 </li>
                 <li>
-                <a href="/user_log">»ç¿ëÀÚ ¸ñ·Ï</a>
+                <a href="/user_log">ì‚¬ìš©ì ëª©ë¡</a>
                 </li>
                 <li>
-                <a href="/title_index">¸ğµç ¹®¼­ ¸ñ·Ï</a>
+                <a href="/title_index">ëª¨ë“  ë¬¸ì„œ ëª©ë¡</a>
                 </li>
                 <li>
-                <a href="/block_log">Â÷´Ü ³»¿ª</a>
+                <a href="/block_log">ì°¨ë‹¨ ë‚´ì—­</a>
                 </li>
                 <li>
-                <a href="/random">ÀÓÀÇ¹®¼­</a>
+                <a href="/random">ì„ì˜ë¬¸ì„œ</a>
                 </li>
                 <li>
-                <a href="/upload">ÆÄÀÏ ¿Ã¸®±â</a>
+                <a href="/upload">íŒŒì¼ ì˜¬ë¦¬ê¸°</a>
                 </li>
                 <li>
-                <a href="/other">±âÅ¸ µµ±¸</a>
+                <a href="/other">ê¸°íƒ€ ë„êµ¬</a>
                 </li>
                 <li>
-                <a href="/manager">°ü¸® µµ±¸</a>
+                <a href="/manager">ê´€ë¦¬ ë„êµ¬</a>
                 </li>
 			</div>
 			<a href=/main_skin_set class=navbar-link>
@@ -996,13 +995,13 @@
 			        <span class="icon ion-ios-gear" style="background: linear-gradient(#d8edff, #1a80c4 50%, #3b98fb 49%, #92c1ea 100%);"></span>
 			    </span>
 
-			    ½ºÅ² ¼³Á¤
+			    ìŠ¤í‚¨ ì„¤ì •
 			</a>
 		</grp>
 
 		<!--[if !IE]><!-->
 			<grp class=liteBar>
-				<a href=/ class=navbar-link>È¨</a> |
+				<a href=/ class=navbar-link>í™ˆ</a> |
 				<a href=/recent_changes class=navbar-link>
     			    <span class=icon-container style="background: linear-gradient(#fff0f2, #ffaac6 50%, #ffaad2 49%, #fff0f6 100%); border-color: #d54272;">
     			        <span class="icon ion-compass" style="background: linear-gradient(#ffd8e5, #c41a6a 50%, #fb3b9e 49%, #ea92b7 100%);"></span>
@@ -1023,8 +1022,8 @@
 
 		<grp class=fullBar>
 			<span class=pull-right>
-				<a href="/log{% if imp[2][5] == '»ç¿ëÀÚ' %}in{% else %}out{% endif %}?redirect={{ request.base_url }}" class=navbar-link>
-					·Î±×{% if imp[2][5] == '»ç¿ëÀÚ' %}ÀÎ{% else %}¾Æ¿ô{% endif %}
+				<a href="/log{% if imp[2][5] == 'ì‚¬ìš©ì' %}in{% else %}out{% endif %}?redirect={{ request.base_url }}" class=navbar-link>
+					ë¡œê·¸{% if imp[2][5] == 'ì‚¬ìš©ì' %}ì¸{% else %}ì•„ì›ƒ{% endif %}
 				</a> |
 
 				<a dropdown href=# class=navbar-link>
@@ -1036,17 +1035,17 @@
 			    <b>{{ imp[2][5] }}</b>
 			    <div class=line></div>
 			    {% if imp[2][2] == 1 %}
-    			    <li><a href=/change>³» Á¤º¸</a></li>
-    			    <li><a href="/w/user:{{ imp[2][5] }}">³» »ç¿ëÀÚ ¹®¼­</a></li>
-    			    <li><a href=/watch_list>³» ¹®¼­ÇÔ</a></li>
+    			    <li><a href=/change>ë‚´ ì •ë³´</a></li>
+    			    <li><a href="/w/user:{{ imp[2][5] }}">ë‚´ ì‚¬ìš©ì ë¬¸ì„œ</a></li>
+    			    <li><a href=/watch_list>ë‚´ ë¬¸ì„œí•¨</a></li>
     			    <div class=line></div>
 			    {% endif %}
-			    <li><a href="/contribution/{% if imp[2][2] == 1 %}author{% else %}ip{% endif %}/{{ imp[2][6] }}/document">³» ¹®¼­ ±â¿© ¸ñ·Ï</a></li>
-			    <li><a href="/contribution/{% if imp[2][2] == 1 %}author{% else %}ip{% endif %}/{{ imp[2][6] }}/discuss">³» Åä·Ğ ±â¿© ¸ñ·Ï</a></li>
+			    <li><a href="/contribution/{% if imp[2][2] == 1 %}author{% else %}ip{% endif %}/{{ imp[2][6] }}/document">ë‚´ ë¬¸ì„œ ê¸°ì—¬ ëª©ë¡</a></li>
+			    <li><a href="/contribution/{% if imp[2][2] == 1 %}author{% else %}ip{% endif %}/{{ imp[2][6] }}/discuss">ë‚´ í† ë¡  ê¸°ì—¬ ëª©ë¡</a></li>
 			    {% if imp[2][2] == 1 %}
-			        <li><a href="/member/logout?redirect={{ request.base_url|url_pas }}">·Î±×¾Æ¿ô</a></li>
+			        <li><a href="/logout?redirect={{ request.base_url }}">ë¡œê·¸ì•„ì›ƒ</a></li>
 			    {% else %}
-			        <li><a href="/member/login?redirect={{ request.base_url|url_pas }}">·Î±×ÀÎ</a></li>
+			        <li><a href="/login?redirect={{ request.base_url }}">ë¡œê·¸ì¸</a></li>
 			    {% endif %}
 				</div>
 			</span>
@@ -1055,8 +1054,8 @@
 		<!--[if !IE]><!-->
             <grp class=liteBar>
 				<span class=pull-right>
-					<a href="/log{% if imp[2][5] == '»ç¿ëÀÚ' %}in{% else %}out{% endif %}?redirect={{ request.base_url }}" class=navbar-link>
-						{% if imp[2][5] == '»ç¿ëÀÚ' %}=&gt;</a>{% else %}&lt;={% endif %}
+					<a href="/log{% if imp[2][5] == 'ì‚¬ìš©ì' %}in{% else %}out{% endif %}?redirect={{ request.base_url }}" class=navbar-link>
+						{% if imp[2][5] == 'ì‚¬ìš©ì' %}=&gt;</a>{% else %}&lt;={% endif %}
 					</a> |
 
 					<a dropdown href=# class=navbar-link>
@@ -1073,25 +1072,25 @@
     			        <span class="icon ion-android-menu" style="background: linear-gradient(#f2e099, #b38f26 50%, #ddb722 49%, #ffefb3 100%);"></span>
     			    </span>
 
-		            ÁÖ½Ã ¸ñ·Ï
+		            ì£¼ì‹œ ëª©ë¡
 		        </a>
 
             {% if menu != 0 %}
                 {% for sub_d in menu %}
-                    {% if sub_d[1] == "µÚ·Î" or sub_d[1] == "Return" %}
+                    {% if sub_d[1] == "ë’¤ë¡œ" or sub_d[1] == "Return" %}
                         <a class=tab href="/{{sub_d[0]}}">&lt; {{sub_d[1]}}</a>
                     {% endif %}
 				{% endfor %}
 				<a class="tab active" href=".">
-				    ÀÛ¾÷
+				    ì‘ì—…
 				</a>
                 {% for sub_d in menu %}
-                    {% if sub_d[1] != "µÚ·Î" and sub_d[1] != "Return" %}
+                    {% if sub_d[1] != "ë’¤ë¡œ" and sub_d[1] != "Return" %}
                         <a class=tab href="/{{sub_d[0]}}">{{sub_d[1]}}</a>
                     {% endif %}
 				{% endfor %}
 			{% else %}
-			    <a class="tab active" href=".">Æ¯¼ö ¹®¼­</a>
+			    <a class="tab active" href=".">íŠ¹ìˆ˜ ë¬¸ì„œ</a>
 			{% endif %}
 		    </div>
 		</grp>
@@ -1113,170 +1112,170 @@
 			    </span>
 
     	        <dt class=xp-taskgroup-title>
-    	            ¹®¼­ ÀÛ¾÷
+    	            ë¬¸ì„œ ì‘ì—…
     	        </dt>
 
     	        <dd class=xp-taskgroup-tasks style="display: block;">
                     <li>
-                        <a href="/edit/{{ imp[0] }}">³»¿ë ÆíÁıÇÏ±â</a>
+                        <a href="/edit/{{ imp[0] }}">ë‚´ìš© í¸ì§‘í•˜ê¸°</a>
                     </li>
                     <li>
-                        <a href="/history/{{ imp[0] }}">ÆíÁı ±â·Ï º¸±â</a>
+                        <a href="/history/{{ imp[0] }}">í¸ì§‘ ê¸°ë¡ ë³´ê¸°</a>
                     </li>
                     <li>
-                        <a href="/move/{{ imp[0] }}">Á¦¸ñ º¯°æÇÏ±â</a>
+                        <a href="/move/{{ imp[0] }}">ì œëª© ë³€ê²½í•˜ê¸°</a>
                     </li>
                     <li>
-                        <a href="/delete/{{ imp[0] }}">ÀÌ ¹®¼­ »èÁ¦ÇÏ±â</a>
+                        <a href="/delete/{{ imp[0] }}">ì´ ë¬¸ì„œ ì‚­ì œí•˜ê¸°</a>
                     </li>
                     <li>
-                        <a href="/raw/{{ imp[0] }}">¹®¼­ ¿øº»</a>
+                        <a href="/raw/{{ imp[0] }}">ë¬¸ì„œ ì›ë³¸</a>
                     </li>
                     <li>
-                        <a href="/down/{{ imp[0] }}">ÇÏÀ§ ¹®¼­ ¸ñ·Ï</a>
+                        <a href="/down/{{ imp[0] }}">í•˜ìœ„ ë¬¸ì„œ ëª©ë¡</a>
                     </li>
                     <li>
-                        <a href="/topic/{{ imp[0] }}">Åä·ĞÇÏ±â</a>
+                        <a href="/topic/{{ imp[0] }}">í† ë¡ í•˜ê¸°</a>
                     </li>
                     <li>
                             <a href="/acl/{{ imp[0] }}">ACL</a>
                         </li>
                 </dd>
             </dl>
-            {% elif imp[3][0] == " (ÆíÁı)" %}
+            {% elif imp[3][0] == " (í¸ì§‘)" %}
             <dl class="xp-taskgroup main-task">
 			    <span class=icon-container style="background: linear-gradient(aliceblue, #adf 50%, #aef 49%, aliceblue 100%); border-color: #427bd5;">
 			        <span class="icon ion-android-create" style="background: linear-gradient(#d8edff, #1a80c4 50%, #3b98fb 49%, #92c1ea 100%);"></span>
 			    </span>
-    	        <dt class=xp-taskgroup-title>ÆíÁı ÀÛ¾÷</dt>
+    	        <dt class=xp-taskgroup-title>í¸ì§‘ ì‘ì—…</dt>
     	        <dd class=xp-taskgroup-tasks style="display: block;">
                     <li>
-                        <a href="/edit_filter">ÆíÁı ÇÊÅÍ ¸ñ·Ï</a>
+                        <a href="/edit_filter">í¸ì§‘ í•„í„° ëª©ë¡</a>
                     </li>
                     <li>
-                        <a href="/history/{{ imp[0] }}">ÆíÁı ±â·Ï º¸±â</a>
+                        <a href="/history/{{ imp[0] }}">í¸ì§‘ ê¸°ë¡ ë³´ê¸°</a>
                     </li>
                     <li>
-                        <a href="/move/{{ imp[0] }}">Á¦¸ñ º¯°æÇÏ±â</a>
+                        <a href="/move/{{ imp[0] }}">ì œëª© ë³€ê²½í•˜ê¸°</a>
                     </li>
                     <li>
-                        <a href="/delete/{{ imp[0] }}">ÀÌ ¹®¼­ »èÁ¦ÇÏ±â</a>
+                        <a href="/delete/{{ imp[0] }}">ì´ ë¬¸ì„œ ì‚­ì œí•˜ê¸°</a>
                     </li>
                     <li>
-                        <a href="/topic/{{ imp[0] }}">Åä·Ğ</a>
+                        <a href="/topic/{{ imp[0] }}">í† ë¡ </a>
                     </li>
                     <li>
-                        <a href="/upload">ÆÄÀÏ ¿Ã¸®±â</a>
+                        <a href="/upload">íŒŒì¼ ì˜¬ë¦¬ê¸°</a>
                     </li>
                     <li>
-                        <a href="/w/{{ imp[0] }}">µ¹¾Æ°¡±â</a>
+                        <a href="/w/{{ imp[0] }}">ëŒì•„ê°€ê¸°</a>
                     </li>
                 </dd>
             </dl>
-            {% elif imp[3][0] == " (Åä·Ğ)" %}
+            {% elif imp[3][0] == " (í† ë¡ )" %}
             <dl class="xp-taskgroup main-task">
 			    <span class=icon-container style="background: linear-gradient(aliceblue, #adf 50%, #aef 49%, aliceblue 100%); border-color: #427bd5;">
 			        <span class="icon ion-chatbubbles" style="background: linear-gradient(#d8edff, #1a80c4 50%, #3b98fb 49%, #92c1ea 100%);"></span>
 			    </span>
 
-    	        <dt class=xp-taskgroup-title>°ü·Ã Ç×¸ñ</dt>
+    	        <dt class=xp-taskgroup-title>ê´€ë ¨ í•­ëª©</dt>
     	        <dd class=xp-taskgroup-tasks style="display: block;">
     	            <li>
-                        <a href="/topic/{{ imp[0] }}">Åä·Ğ ¸ñ·Ï</a>
+                        <a href="/topic/{{ imp[0] }}">í† ë¡  ëª©ë¡</a>
                     </li>
                     <li>
-                        <a href="/edit/{{ imp[0] }}">³»¿ë ÆíÁıÇÏ±â</a>
+                        <a href="/edit/{{ imp[0] }}">ë‚´ìš© í¸ì§‘í•˜ê¸°</a>
                     </li>
                     <li>
-                        <a href="/history/{{ imp[0] }}">ÆíÁı ±â·Ï º¸±â</a>
+                        <a href="/history/{{ imp[0] }}">í¸ì§‘ ê¸°ë¡ ë³´ê¸°</a>
                     </li>
                     <li>
-                        <a href="/w/{{ imp[0] }}">µ¹¾Æ°¡±â</a>
+                        <a href="/w/{{ imp[0] }}">ëŒì•„ê°€ê¸°</a>
                     </li>
                 </dd>
             </dl>
-            {% elif imp[3][0] == " (»èÁ¦)" %}
+            {% elif imp[3][0] == " (ì‚­ì œ)" %}
             <dl class="xp-taskgroup main-task">
 			    <span class=icon-container style="background: linear-gradient(aliceblue, #adf 50%, #aef 49%, aliceblue 100%); border-color: #427bd5;">
 			        <span class="icon ion-ios-trash" style="background: linear-gradient(#d8edff, #1a80c4 50%, #3b98fb 49%, #92c1ea 100%);"></span>
 			    </span>
 
-    	        <dt class=xp-taskgroup-title>°ü·Ã Ç×¸ñ</dt>
+    	        <dt class=xp-taskgroup-title>ê´€ë ¨ í•­ëª©</dt>
     	        <dd class=xp-taskgroup-tasks style="display: block;">
                     <li>
-                        <a href="/move/{{ imp[0] }}">Á¦¸ñ º¯°æÇÏ±â</a>
+                        <a href="/move/{{ imp[0] }}">ì œëª© ë³€ê²½í•˜ê¸°</a>
                     </li>
                 </dd>
             </dl>
-            {% elif imp[3][0] == " (¿ª»ç)" %}
+            {% elif imp[3][0] == " (ì—­ì‚¬)" %}
             <dl class="xp-taskgroup main-task">
 			    <span class=icon-container style="background: linear-gradient(aliceblue, #adf 50%, #aef 49%, aliceblue 100%); border-color: #427bd5;">
 			        <span class="icon ion-ios-rewind" style="background: linear-gradient(#d8edff, #1a80c4 50%, #3b98fb 49%, #92c1ea 100%);"></span>
 			    </span>
 
-    	        <dt class=xp-taskgroup-title>°ü·Ã Ç×¸ñ</dt>
+    	        <dt class=xp-taskgroup-title>ê´€ë ¨ í•­ëª©</dt>
     	        <dd class=xp-taskgroup-tasks style="display: block;">
                     <li>
-                        <a href="/edit/{{ imp[0] }}">³»¿ë ÆíÁıÇÏ±â</a>
+                        <a href="/edit/{{ imp[0] }}">ë‚´ìš© í¸ì§‘í•˜ê¸°</a>
                     </li>
                     <li>
-                        <a href="/w/{{ imp[0] }}">µ¹¾Æ°¡±â</a>
+                        <a href="/w/{{ imp[0] }}">ëŒì•„ê°€ê¸°</a>
                     </li>
                 </dd>
             </dl>
             {% endif %}
             <dl class="xp-taskgroup" id=longhornFileFilter>
-    	        <dt class=xp-taskgroup-title>°Ë»ö ¹× Å½»ö</dt>
+    	        <dt class=xp-taskgroup-title>ê²€ìƒ‰ ë° íƒìƒ‰</dt>
     	        <dd class=xp-taskgroup-tasks>
                     <form method=post action=/goto id=frmSearchForm role=search>
                         <input style="padding:0; width: auto;" class="input is-primary ui-autocomplete-input" name=search id=searchInput autocomplete=off type=text>
-                        <button type=submit>ÀÌµ¿</button>
+                        <button type=submit>ì´ë™</button>
                     </form>
 
                     <li>
-                        <a href=/random>ÀÓÀÇ ¹®¼­·Î ÀÌµ¿</a>
+                        <a href=/random>ì„ì˜ ë¬¸ì„œë¡œ ì´ë™</a>
                     </li>
                     <li>
-                        <a href=/recent_changes>ÃÖ±Ù º¯°æµÈ ¹®¼­</a>
+                        <a href=/recent_changes>ìµœê·¼ ë³€ê²½ëœ ë¬¸ì„œ</a>
                     </li>
                 </dd>
             </dl>
     	    <dl class="xp-taskgroup" id=specialFunctionList>
-    	        <dt class=xp-taskgroup-title>ÁÖ¿ä ±â´É</dt>
+    	        <dt class=xp-taskgroup-title>ì£¼ìš” ê¸°ëŠ¥</dt>
     	        <dd class=xp-taskgroup-tasks>
                     <li>
-                    <a href="/please">ÀÛ¼ºÀÌ ÇÊ¿äÇÑ ¹®¼­</a>
+                    <a href="/please">ì‘ì„±ì´ í•„ìš”í•œ ë¬¸ì„œ</a>
                     </li>
                     <li>
-                    <a href="/upload">ÆÄÀÏ ¿Ã¸®±â</a>
+                    <a href="/upload">íŒŒì¼ ì˜¬ë¦¬ê¸°</a>
                     </li>
                 </dd>
             </dl>
             
-            {% if imp[0] == 'ÃÖ±Ù ÆíÁı' %}
+            {% if imp[0] == 'ìµœê·¼ í¸ì§‘' %}
                 <dl class="xp-taskgroup">
-        	        <dt class=xp-taskgroup-title>°ü·Ã À§Ä¡</dt>
+        	        <dt class=xp-taskgroup-title>ê´€ë ¨ ìœ„ì¹˜</dt>
         	        <dd class=xp-taskgroup-tasks style="display: block;">
                         <li>
-                            <a href="/RecentDiscuss">ÃÖ±Ù Åä·Ğ</a>
+                            <a href="/RecentDiscuss">ìµœê·¼ í† ë¡ </a>
                         </li>
                     </dd>
                 </dl>
-            {% elif imp[0] == 'ÃÖ±Ù Åä·Ğ' %}
+            {% elif imp[0] == 'ìµœê·¼ í† ë¡ ' %}
                 <dl class="xp-taskgroup">
-        	        <dt class=xp-taskgroup-title>°ü·Ã À§Ä¡</dt>
+        	        <dt class=xp-taskgroup-title>ê´€ë ¨ ìœ„ì¹˜</dt>
         	        <dd class=xp-taskgroup-tasks style="display: block;">
                         <li>
-                            <a href="/RecentChanges">ÃÖ±Ù º¯°æ³»¿ª</a>
+                            <a href="/RecentChanges">ìµœê·¼ ë³€ê²½ë‚´ì—­</a>
                         </li>
                     </dd>
                 </dl>
-            {% elif imp[3][0] == " (¿ª»ç)" %}
+            {% elif imp[3][0] == " (ì—­ì‚¬)" %}
                 <dl class="xp-taskgroup">
-        	        <dt class=xp-taskgroup-title>°ü·Ã À§Ä¡</dt>
+        	        <dt class=xp-taskgroup-title>ê´€ë ¨ ìœ„ì¹˜</dt>
         	        <dd class=xp-taskgroup-tasks style="display: block;">
                         <li>
-                            <a href="/recent_changes">ÃÖ±Ù º¯°æ³»¿ª</a>
+                            <a href="/recent_changes">ìµœê·¼ ë³€ê²½ë‚´ì—­</a>
                         </li>
                     </dd>
                 </dl>
