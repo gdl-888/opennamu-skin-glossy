@@ -11,6 +11,7 @@ index.htm이 레이아웃 화일이고, glosblue.htm은 포트 전, 원본 스�
 VIEWS 디렉토리에 glossy 등의 디렉토리를 만들고 INDEX.HTML을 해당 디렉토리 내부로 복사한다.
 
 # 미리보기
+![Firefox](https://github.com/gdl-888/opennamu-skin-glossy/raw/master/ff.bmp)
+![IE 6](https://github.com/gdl-888/opennamu-skin-glossy/blob/master/ie6-glossy.bmp)
 ![IE 7](https://github.com/gdl-888/opennamu-skin-glossy/raw/master/777.bmp)
 ![IE 8](https://github.com/gdl-888/opennamu-skin-glossy/raw/master/888.bmp)
-![Firefox](https://github.com/gdl-888/opennamu-skin-glossy/raw/master/ff.bmp)
